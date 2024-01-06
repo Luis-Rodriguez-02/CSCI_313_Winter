@@ -1,8 +1,8 @@
 class ArrayList:
   def __init__(self, size=10) -> None:
-    self.size = size
-    self.count = 0;
-    self.items = []
+    self.size = size  # i.e array[10]
+    self.count = 0;  # num vals in array
+    self.items = []  # similar to arr[]
   
   def isEmpty(self):
     return self.count == 0
@@ -24,10 +24,10 @@ class ArrayList:
     if index < 0 or index >= self.size:
       raise Exception("Index out of range")
     else:
-      self.items.insert(index, item)
+      self.items.insert(index, item) 
       self.count += 1
   
-  def toList(self):
+  def toList(self):  # iterate thru arr and fill list with values
     to_list = []
     for i in self.items:
       to_list.append(i)
