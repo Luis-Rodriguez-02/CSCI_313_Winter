@@ -1,4 +1,14 @@
-'''Implementing the binary search algorithm both recursivly and iteratively'''
+'''Implementing the binary search algorithm both recursivly and iteratively
+
+- get middle index
+- if middle value > target -> change higher bound to middle - 1
+- if middle value < target -> change lower bound to lower + 1
+- end contition is if low <= high
+because that is the search space
+
+i.e if low == high -> 1 element
+i.e if low > high -> element not found
+'''
 
 # Search algorithim that finds the position of a target in a sorted array. Half of the array is eliminated during each step
 def iter_binary_search(iterable, target):

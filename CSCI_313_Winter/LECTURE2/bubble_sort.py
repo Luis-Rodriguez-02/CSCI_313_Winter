@@ -1,4 +1,10 @@
-'''Implementing the bubble sort algorithim'''
+'''Implementing the bubble sort algorithim
+
+- check if left value > right value
+- if greater swap
+- continue iterations until no swaps -> this means its sorted
+
+'''
 
 def bubble_sort(list_a):
   # python excludes the stop variable so i+1 will allow us to test the rightmost last var
